@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GreenAir</string>
+    <string name="featureairquality"> Get real-time air quality updates for your area\n with  the GreenAir app. Discover ways to\n improve the  environment by planting more\n trees and reducing  pollutants. Take control of\n your surroundings and  create a cleaner,\n healthier space.</string>
+    <string name="featureplantidentification">Experience personalized plant care like never\n before with the GreenAir app. Receive tailored\n recommendations based on your plant\'s specific\n needs, environmental factors, and your\n preferences. Keep your plants thriving\n and create an optimal growing environment\n with expert guidance at your fingertips.</string>
+    <string name="featureperfectplant">Discover the perfect plant for your space,\n considering factors like lighting conditions,\n space availability, and maintenance preferences.\n Get personalized recommendations to ensure \nsuccessful plant selection and create a\n green oasis in your home or\n office.</string>
+    <string name="featurelibrary">Access a rich and diverse plant library within the\n GreenAir app, offering a wealth of \ninformation on various plant species. Explore \ndetailed profiles, including growth habits,\n watering requirements, sunlight preferences,\n and more. </string>
+    <string name="airqualityname">Breathe Easy:</string>
+    <string name="subheadingairquality"> Real time Air Insights</string>
+    <string name="plantdoctor">Plant Doctor:</string>
+    <string name="perfectplant">Home Green Home:</string>
+    <string name="subheadingperfectplant">Find Your Plant Match</string>
+    <string name="plantlibrary">Plant Library:</string>
+    <string name="subheadingplantlibrary">Plant Exploration Made Easy</string>
+</resources>
