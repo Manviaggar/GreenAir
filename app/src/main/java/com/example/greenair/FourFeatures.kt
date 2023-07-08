@@ -33,6 +33,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
@@ -41,6 +42,7 @@ import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.greenair.ui.theme.Caprasimo
 import com.example.greenair.ui.theme.Pink80
 import com.example.greenair.ui.theme.Quicksandfamily
+import com.example.greenair.ui.theme.Screen
 import com.example.greenair.ui.theme.features
 import com.example.greenair.ui.theme.green1
 import com.example.greenair.ui.theme.green2
@@ -49,17 +51,43 @@ import com.example.greenair.ui.theme.ysabeau
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AllFeatures(){
-    Scaffold() {
-            it->
-        LazyRow(contentPadding =it ){
-            items(features){
-                Pageone(
-                    dog = it,
-                    gradient = Brush.horizontalGradient(colors= listOf(green1,green2))
-                )
+fun AllFeatures(navController: NavController) {
+    Column() {
+
+        Scaffold() { it ->
+            LazyRow(contentPadding = it) {
+                items(features) {
+                    Pageone(
+                        dog = it,
+                        gradient = Brush.horizontalGradient(colors = listOf(green1, green2))
+                    )
+                }
+            }
+            Button(
+                colors= ButtonDefaults.buttonColors(Color.Transparent),
+                contentPadding = PaddingValues(),
+                onClick = { navController.navigate (Screen.RegisterOne.route)},
+                modifier = Modifier
+                    .align(Alignment.End)
+                    .padding(16.dp)
+                    .fillMaxWidth()
+                    .height(60.dp)
+                    .width(150.dp)
+            )  {
+                Box(modifier = androidx.compose.ui.Modifier
+                    .background(Pink80)
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp),
+                    contentAlignment = Alignment.Center) {
+                    Text(text = "Start",
+                        color=Color.White,
+                        fontSize = 20.sp,
+                        textAlign = TextAlign.Center,
+                        fontWeight = FontWeight.Bold)
+                }
             }
         }
+
     }
 }
 @Composable
@@ -72,7 +100,7 @@ fun Pageone(
         shape= MaterialTheme.shapes.small
     ) {
         Box(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier,
             contentAlignment = Alignment.Center
         ) {
             Column(
@@ -155,7 +183,6 @@ fun TextFeatureone(feature_name:Int, feature_sub:Int, feature_description:Int, t
                 fontWeight = FontWeight.Bold
             )
             Spacer(modifier = Modifier.height(30.dp))
-            Gradient1Button(text = "Start", textColor = Color.White)
         }
     }
 }
