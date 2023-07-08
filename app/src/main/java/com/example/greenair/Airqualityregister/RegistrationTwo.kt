@@ -17,10 +17,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
+import com.example.greenair.Navigationpackage.Screen
 
 @Composable
-fun RegistrationPagetwo(){
+fun RegistrationPagetwo(navController: NavController){
     var Gender by rememberSaveable {
         mutableStateOf("")
     }
@@ -94,6 +94,8 @@ when{
         nameError="this field is required"
     }
 }
+            navController.navigate(Screen.Loginfeatures.route)
+
         }) {
             Text(text = "Next")
         }

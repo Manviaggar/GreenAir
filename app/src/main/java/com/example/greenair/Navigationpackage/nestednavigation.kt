@@ -1,0 +1,13 @@
+package com.example.greenair.Navigationpackage
+
+import androidx.navigation.NavController
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.composable
+import androidx.navigation.navigation
+import com.example.greenair.Airqualityregister.FourButton
+import com.example.greenair.fourFeaturespagesall.FeatureAirqualitypage
+import com.example.greenair.fourFeaturespagesall.LibraryPage
+import com.example.greenair.fourFeaturespagesall.Plantdoctor
+import com.example.greenair.fourFeaturespagesall.perfectplantfeature
+

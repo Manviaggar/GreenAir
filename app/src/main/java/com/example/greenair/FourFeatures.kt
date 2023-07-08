@@ -42,7 +42,7 @@ import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.greenair.ui.theme.Caprasimo
 import com.example.greenair.ui.theme.Pink80
 import com.example.greenair.ui.theme.Quicksandfamily
-import com.example.greenair.ui.theme.Screen
+import com.example.greenair.Navigationpackage.Screen
 import com.example.greenair.ui.theme.features
 import com.example.greenair.ui.theme.green1
 import com.example.greenair.ui.theme.green2
