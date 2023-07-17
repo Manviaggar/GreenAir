@@ -10,6 +10,7 @@ import com.example.greenair.Airqualityregister.LoginFeatures
 import com.example.greenair.Airqualityregister.RegistationFormOne
 import com.example.greenair.Airqualityregister.RegistrationPagetwo
 import com.example.greenair.AllFeatures
+import com.example.greenair.AnimatesSplashScreen
 import com.example.greenair.HomePage
 import com.example.greenair.fourFeaturespagesall.FeatureAirqualitypage
 import com.example.greenair.fourFeaturespagesall.LibraryPage
@@ -21,8 +22,11 @@ import com.example.greenair.SignUp
 fun Navigation(){
     val navController= rememberNavController()
     NavHost(navController = navController,
-    startDestination = Screen.Home.route
+    startDestination = Screen.Splash.route
     ) {
+        composable(route=Screen.Splash.route){
+            AnimatesSplashScreen(navController)
+        }
         composable(route = Screen.Home.route) {
             HomePage(navController = navController)
         }
