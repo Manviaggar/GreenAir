@@ -86,7 +86,7 @@ fun HomePage(navController: NavController) {
                 Button(
                     colors= ButtonDefaults.buttonColors(Color.Transparent),
                     contentPadding = PaddingValues(),
-                    onClick = { }
+                    onClick = { navController.navigate(Screen.LoginForApp.route)}
                 )
                 {
                     Box(modifier = Modifier

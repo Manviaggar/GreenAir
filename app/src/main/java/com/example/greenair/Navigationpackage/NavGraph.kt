@@ -30,6 +30,7 @@ fun Navigation(){
         composable(route = Screen.Home.route) {
             HomePage(navController = navController)
         }
+
         composable(
             route = Screen.Register.route
         ) {
