@@ -66,8 +66,4 @@ fun LoginForapp(navController: NavController){
        }
     }
 }
-@Preview
-@Composable
-fun Previewloginpage(){
-    LoginForapp(navController = rememberNavController())
-}
+

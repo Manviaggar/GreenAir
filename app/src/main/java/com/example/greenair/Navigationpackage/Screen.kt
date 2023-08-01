@@ -1,5 +1,6 @@
 package com.example.greenair.Navigationpackage
 const val AUTHENTICATION_ROUTE="authentication"
+const val AUTHENTICATION="navigation"
 const val ROUTE_ROOT="root"
 sealed class Screen(val route:String){
     object Splash:Screen(route="Splash Screen")

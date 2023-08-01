@@ -45,7 +45,7 @@ fun AnimatesSplashScreen(navController: NavController){
 @Composable
 fun Splash(alpha:Float){
     Box(modifier = Modifier
-        .background(if (isSystemInDarkTheme()) Color.Black else Color.White)
+        .background(if (isSystemInDarkTheme()) Color.White else Color.White)
         .fillMaxSize(),
         contentAlignment = Alignment.Center
     ){

@@ -17,6 +17,7 @@ import com.example.greenair.fourFeaturespagesall.LibraryPage
 import com.example.greenair.fourFeaturespagesall.Plantdoctor
 import com.example.greenair.fourFeaturespagesall.perfectplantfeature
 import com.example.greenair.SignUp
+import com.example.greenair.ui.theme.LoginForapp
 
 @Composable
 fun Navigation(){
@@ -30,12 +31,26 @@ fun Navigation(){
         composable(route = Screen.Home.route) {
             HomePage(navController = navController)
         }
-
-        composable(
-            route = Screen.Register.route
-        ) {
-            SignUp(navController = navController)
-        }
+navigation(
+    startDestination = Screen.Home.route ,
+    route= AUTHENTICATION
+){
+    composable(
+        route = Screen.Register.route
+    ) {
+        SignUp(navController = navController)
+    }
+    composable(
+        route=Screen.LoginForApp.route
+    ){
+LoginForapp(navController = navController)
+    }
+}
+//        composable(
+//            route = Screen.Register.route
+//        ) {
+//            SignUp(navController = navController)
+//        }
         composable(route = Screen.Feature.route) {
             AllFeatures(navController = navController)
         }
