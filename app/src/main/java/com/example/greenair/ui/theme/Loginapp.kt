@@ -1,5 +1,6 @@
 package com.example.greenair.ui.theme
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -7,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -38,13 +40,12 @@ fun LoginForapp(navController: NavController){
     var password by remember{
         mutableStateOf("")
     }
-    Box(modifier = Modifier.fillMaxSize())
-    {
+    Box{
        Column (
-           modifier= Modifier
-               .padding(16.dp)
-               .align(Alignment.Center),
-           verticalArrangement = Arrangement.spacedBy(16.dp)
+           modifier = Modifier.fillMaxSize().background(color= backgroundforregister),
+           verticalArrangement = Arrangement.spacedBy(16.dp, alignment = Alignment.Top),
+           horizontalAlignment = Alignment.CenterHorizontally
+
        ){
            TextComposable(value = "Login")
            TextComposable(value = "Welcome back")
@@ -58,6 +59,7 @@ fun LoginForapp(navController: NavController){
            )
            Button(
                onClick = {navController.navigate(Screen.Feature.route) },
+               colors= ButtonDefaults.buttonColors(deepgreen),
                modifier = Modifier.fillMaxWidth()
            )
            {

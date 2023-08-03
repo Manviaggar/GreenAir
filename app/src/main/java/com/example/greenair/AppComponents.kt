@@ -6,6 +6,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.text.KeyboardOptions
@@ -47,6 +48,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.greenair.ui.theme.deepgreen
 import com.example.greenair.ui.theme.heading
 
 @Composable
@@ -58,10 +60,10 @@ fun TextComposable(value :String){
             .heightIn(min = 35.dp),
         style = TextStyle(
             fontSize = 28.sp,
-            fontWeight = FontWeight.Normal,
+            fontWeight = FontWeight.Bold,
             fontStyle = FontStyle.Normal
         ),
-        color= colorResource(id = R.color.white),
+        color= Color.White,
         textAlign = TextAlign.Center
     )
 
@@ -95,6 +97,7 @@ fun TextInput(
         onValueChange = { value =it },
         modifier = Modifier
             .fillMaxWidth()
+            .padding(6.dp)
             .border(
                 BorderStroke(1.dp, Color.White),
                 shape = RoundedCornerShape(50)
@@ -165,6 +168,7 @@ fun Passwordsee(labelValue:String){
             password =it },
         modifier = Modifier
             .fillMaxWidth()
+            .padding(6.dp)
             .border(
                 BorderStroke(1.dp, Color.White),
                 shape = RoundedCornerShape(50)
@@ -209,6 +213,7 @@ fun Passwordsee(labelValue:String){
 fun CheckBoxfunc(value:String){
     Row(modifier= Modifier
         .fillMaxWidth()
+        .padding(6.dp)
         .heightIn(56.dp),
         verticalAlignment = Alignment.CenterVertically){
 

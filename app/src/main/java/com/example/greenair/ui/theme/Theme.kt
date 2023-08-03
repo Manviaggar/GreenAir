@@ -27,7 +27,7 @@ private val LightColorScheme = lightColorScheme(
     primary = Purple40,
     secondary = PurpleGrey40,
     tertiary = Pink40,
-    onTertiary = barcolor
+    onTertiary = Color.Black
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -60,7 +60,7 @@ fun GreenAirTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.onTertiary.toArgb()
+            window.statusBarColor = if(darkTheme) colorScheme.onTertiary.toArgb() else colorScheme.onTertiary.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }
