@@ -16,4 +16,5 @@ sealed class Screen(val route:String){
     object PlantDoctor: Screen(route="navigate to our third feature")
     object libraryFeature: Screen(route="navigate to our fourth feature")
     object LoginForApp:Screen(route="navigate to the login page")
+    object LinkPage:Screen(route="navigate to our official website")
 }
