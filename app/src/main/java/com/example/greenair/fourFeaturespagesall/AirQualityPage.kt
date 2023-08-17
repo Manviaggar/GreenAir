@@ -29,7 +29,7 @@ fun FeatureAirqualitypage(){
             verticalArrangement = Arrangement.spacedBy(16.dp, alignment = Alignment.Top),
     horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        com.example.greenair.HyperLinkText(fullText = "Explore our features on our official website", linkText = listOf("official website") , hyperlinks = listOf("https://backendgreenair.azurewebsites.net/"))
+        com.example.greenair.HyperLinkText(fullText = "Explore our features on our official website", linkText = listOf("official website") , hyperlinks = listOf("https://social-impact-front-end.vercel.app/"))
     }
 }
 

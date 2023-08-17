@@ -13,6 +13,6 @@ fun LibraryPage(){
     Column(modifier = Modifier
         .fillMaxSize()
         .background(color = backgroundforregister)) {
-        com.example.greenair.HyperLinkText(fullText = "Explore our features on our official website", linkText = listOf("official website") , hyperlinks = listOf("https://backendgreenair.azurewebsites.net/"))
+        com.example.greenair.HyperLinkText(fullText = "Explore our features on our official website", linkText = listOf("official website") , hyperlinks = listOf("https://social-impact-front-end.vercel.app/"))
     }
 }
