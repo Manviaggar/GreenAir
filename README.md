@@ -10,8 +10,8 @@ Moreover, the application offers a comprehensive plant disease diagnosis feature
 By combining these features, our app aims to empower individuals to make informed decisions about their environment, nurture their green spaces, and enhance their overall well-being. Through real-time air quality tracking, plant identification, disease diagnosis, and personalized plant care recommendations, we believe that our application can contribute to a greener and healthier future for individuals and communities.
 
 3. USER NEEDS AND PAIN POINTS
-1. Air Quality Tracking: Users want to stay informed about the air quality in their surroundings to make informed decisions regarding outdoor activities and protect their health.
-2. Plant Identification: Users have a desire to learn about the different plants they encounter, including their names, characteristics, and care requirements, in order to foster a deeper connection with nature and enhance their botanical knowledge.
+-> Air Quality Tracking: Users want to stay informed about the air quality in their surroundings to make informed decisions regarding outdoor activities and protect their health.
+-> Plant Identification: Users have a desire to learn about the different plants they encounter, including their names, characteristics, and care requirements, in order to foster a deeper connection with nature and enhance their botanical knowledge.
 3. Plant Disease Diagnosis: Users need assistance in identifying and diagnosing plant diseases accurately to take appropriate measures and save their plants from further damage.
 4. Personalized Plant Care Recommendations: Users seek expert guidance and recommendations for caring for their plants, taking into account factors such as plant type, location, and environmental conditions, to promote healthy growth and prevent issues.
 5. Limited Environmental Awareness: Users often lack real-time information about air quality in their area, which makes it difficult to make informed decisions and take necessary precautions.
