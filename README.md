@@ -92,6 +92,31 @@ PROJECT ROADMAP
 The timelines and specific tasks may vary based on the project's scope, available resources, and other factors. Regular communication, agile development methodologies, and continuous feedback loops are essential throughout the project to ensure its successful completion.
 
 
+Technologies Used
+
+- **Kotlin**: Our Android app is developed using Kotlin, a modern, concise, and expressive programming language for Android development.
+
+- **Jetpack Compose**: We utilize Jetpack Compose, Google's modern Android UI toolkit, for creating a delightful and intuitive user interface.
+
+- **Django (Python)**: The backend of our application is powered by Django, a high-level Python web framework that enables rapid development and clean, pragmatic design.
+
+- **SQL Database**: We use a Microsoft SQL database to store and manage user data, plant information, and other relevant data.
+
+- **Firebase Cloud Messaging (FCM)**: FCM is employed for real-time notifications, ensuring users stay updated on new posts and comments in the forum.
+
+- **Firebase Authentication**: Firebase Authentication handles user registration and login, providing a secure and seamless experience.
+
+- **Third-Party APIs**: We integrate with external services and APIs to access real-time air quality data, environmental information, and plant databases.
+
+- **Responsive Design**: Our app and website are designed to be responsive, ensuring an optimal user experience on a variety of devices and screen sizes.
+
+- **Version Control**: We use Git and GitHub for version control, making it easy to collaborate and track changes in our codebase.
+
+- **Continuous Integration**: Our project employs continuous integration to automate testing and deployment processes, ensuring a reliable and up-to-date application.
+
+Please note that while we have completed the frontend part of our project, we have plans to explore and implement additional features in the future. Stay tuned for updates as we continue to enhance the GreenAir experience.
+
+
 CONCLUSION
 In conclusion, our app offers a comprehensive solution for individuals seeking real-time air quality tracking, plant identification, disease diagnosis, and personalized plant care recommendations. By addressing the user needs and pain points associated with these areas, our app aims to empower users to make informed decisions, enhance their botanical knowledge, manage plant diseases effectively, and provide optimal care to their plants.
 With the app's real-time air quality tracking feature, users can stay informed about the air pollution levels in their surroundings, enabling them to protect their health and make informed choices about outdoor activities. The plant identification feature fosters a deeper connection with nature, allowing users to explore and learn about different plants they encounter. The disease diagnosis feature utilizes advanced machine learning algorithms to accurately identify plant diseases, enabling prompt action to save plants from further damage. Additionally, the app provides personalized plant care recommendations, ensuring that users can provide optimal care tailored to their specific plants and environmental conditions.
